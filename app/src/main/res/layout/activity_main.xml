@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- cabecera -->
+    <com.google.android.material.appbar.MaterialToolbar
+        app:title="mi app 2.0"
+        app:titleTextColor="#FFFFFF"
+        android:background="#ECA9ED"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <!-- selector de fragmentos -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIndicatorColor="#E767A7"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#3E3E3E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- visor de fragmentos -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
